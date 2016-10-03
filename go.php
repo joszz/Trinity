@@ -7,6 +7,12 @@
     <title>Trinity - The Matrix Generator</title>
     <link rel="stylesheet" type="text/css" href="css/the_blue_pill.css" />
     <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <meta name="theme-color" content="#000000">
 </head>
 <body>
     <?php if(isset($_GET['size'])) : ?>
