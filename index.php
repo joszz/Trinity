@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="css/the_blue_pill.css" />
     <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
 
-
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
@@ -16,28 +15,32 @@
     <meta name="theme-color" content="#000000">
 </head>
 <body>
-    <div id="matrix">Trinity - The Matrix Generator</div>
-    <div id="content" class="trinity_content_bg">
-        <h1>Trinity - The Matrix Generator</h1>
+    <canvas id="q">Sorry Browser Won't Support</canvas>
 
-        <form method="get" action="go.php">
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" value="Neo" />
+    <div id="content">
+        <div id="trinity_content_bg"></div>
+        <div id="form">
+            <h1>Trinity - The Matrix Generator</h1>
 
-            <label for="smileys">Show smileys?</label>
-            <input type="checkbox" name="smileys" id="smileys" checked />
+            <form method="get" action="go.php">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" value="Neo" />
 
-            <label for="replay">Replay?</label>
-            <input type="checkbox" name="replay" id="replay" checked />
+                <label for="smileys">Show smileys?</label>
+                <input type="checkbox" name="smileys" id="smileys" checked />
 
-            <label for="loop">Loop?</label>
-            <input type="checkbox" name="loop" id="loop" checked />
+                <label for="replay">Replay?</label>
+                <input type="checkbox" name="replay" id="replay" checked />
 
-            <label for="size">Font size:</label>
-            <input type="text" name="size" id="size" value="14" />
+                <label for="loop">Loop?</label>
+                <input type="checkbox" name="loop" id="loop" checked />
 
-            <input type="submit" value="Go!" />
-        </form>
+                <label for="size">Font size:</label>
+                <input type="text" name="size" id="size" value="14" />
+
+                <input type="submit" value="Go!" />
+            </form>
+        </div>
     </div>
 
     <script type="text/javascript" src="js/index.js"></script>

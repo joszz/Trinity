@@ -1,24 +1,124 @@
-body{font-family:Lucida Console, Courier, Monotype;color:#7ac2ad;background-color:black;overflow:hidden}
-a{text-decoration:none;color:#7ac2ad;outline:none}
-a:hover{text-decoration:blink}
+html{
+    min-height: 100%;
+}
+body {
+    font-family: Lucida Console, Courier, Monotype;
+    color: #7ac2ad;
+    background-color: black;
+    overflow: hidden;
+    height: 100%;
+}
 
-.matrix{font-size:10pt;text-align:center;width:10px;padding:0px;margin:0px}
-div#matrix{position:absolute;top:0;left:0;z-index:0;height:330px;display:none;opacity:.40;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";filter:alpha(opacity=40)}
-div#content{position:relative;top:0;left:0;z-index:1;width:100%}
-div#content p{margin:0}
-div.trinity_content_bg{height:330px;color:#62954d}
+a {
+    text-decoration: none;
+    color: #7ac2ad;
+    outline: none;
+}
 
-div#replay{display:none}
-div#replay div{bottom:0;position:fixed;font-size:10px;line-height:30px;width:100%}
-div#replay form{float:right;margin-right:20px}
+    a:hover {
+        text-decoration: blink;
+    }
 
-.formHelper a#renew_captcha{background-color:#FFF;border:1px solid #CCC;padding:10px;float:left;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;behavior:url("/styles/pie.php")}
-.formHelper a#renew_captcha.input_active{border-color:#62954d}
-.input_active{border-color:#62954D;-moz-box-shadow:0 0 40px #62954D;-webkit-box-shadow:0 0 40px #62954D;box-shadow:0 0 40px #62954D;behavior:url(/styles/pie.php)}
-label{float: left; clear: left; width: 200px}
-input{float: left}
-input[type="text"]{width:230px}
-input[type="submit"]{color:#FFF;border:1px;outline:none;background-color:#62954d;cursor:pointer;font-weight:bold;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;behavior:url("/styles/pie.php");width:100px;padding:7px;clear:left}
-input[type="submit"]:hover{-moz-box-shadow:0 0 40px #62954D;-webkit-box-shadow:0 0 40px #62954D;box-shadow:0 0 40px #62954D}
+.matrix {
+    font-size: 10pt;
+    text-align: center;
+    width: 10px;
+    padding: 0px;
+    margin: 0px;
+}
 
-.input_active{border-color:#62954d;-moz-box-shadow:0 0 7px #62954d;-webkit-box-shadow:0 0 7px #62954d;box-shadow:0 0 7px #62954d;behavior:url("../styles/pie.php")}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+}
+
+div#content {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: table;
+}
+
+    div#content p {
+        margin: 0;
+    }
+
+div#trinity_content_bg {
+    position: relative;
+    background-color: #FFF;
+    opacity: 0.5;
+}
+
+div#replay {
+    display: none;
+}
+
+    div#replay div {
+        bottom: 0;
+        position: fixed;
+        font-size: 10px;
+        line-height: 30px;
+        width: 100%;
+    }
+
+    div#replay form {
+        float: right;
+        margin-right: 20px;
+    }
+
+
+.input_active {
+    border-color: #62954D;
+    -moz-box-shadow: 0 0 40px #62954D;
+    -webkit-box-shadow: 0 0 40px #62954D;
+    box-shadow: 0 0 40px #62954D;
+    behavior: url(/styles/pie.php);
+}
+
+label {
+    float: left;
+    clear: left;
+    width: 200px;
+}
+
+input {
+    float: left;
+}
+
+    input[type="text"] {
+        width: 230px;
+    }
+
+    input[type="submit"] {
+        color: #FFF;
+        border: 1px;
+        outline: none;
+        background-color: #62954d;
+        cursor: pointer;
+        font-weight: bold;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        behavior: url("/styles/pie.php");
+        width: 100px;
+        padding: 7px;
+        clear: left;
+    }
+
+        input[type="submit"]:hover {
+            -moz-box-shadow: 0 0 40px #62954D;
+            -webkit-box-shadow: 0 0 40px #62954D;
+            box-shadow: 0 0 40px #62954D;
+        }
+
+.input_active {
+    border-color: #62954d;
+    -moz-box-shadow: 0 0 7px #62954d;
+    -webkit-box-shadow: 0 0 7px #62954d;
+    box-shadow: 0 0 7px #62954d;
+    behavior: url("../styles/pie.php");
+}
