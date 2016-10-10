@@ -1,3 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -16,6 +17,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="css\the_blue_pill.css" />
+    <Compile Include="form.php" />
     <Compile Include="js\index.js" />
     <Compile Include="js\jquery-3.1.1.min.js" />
     <Compile Include="js\go.js" />
@@ -24,6 +26,22 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="css" />
+    <Folder Include="img\" />
+    <Folder Include="img\favicons\" />
     <Folder Include="js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="img\favicons\android-chrome-192x192.png" />
+    <Content Include="img\favicons\apple-touch-icon.png" />
+    <Content Include="img\favicons\browserconfig.xml" />
+    <Content Include="img\favicons\favicon-16x16.png" />
+    <Content Include="img\favicons\favicon-32x32.png" />
+    <Content Include="img\favicons\favicon.ico" />
+    <Content Include="img\favicons\manifest.json" />
+    <Content Include="img\favicons\mstile-150x150.png" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\waves.js" />
   </ItemGroup>
 </Project>

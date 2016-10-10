@@ -1,4 +1,13 @@
 $(function () {
+    $("a, button").vibrate();
+
+    Waves.attach(".btn, button");
+    Waves.init();
+
+    digitalRain();
+});
+
+function digitalRain() {
     var s = window.screen;
     var width = q.width = s.width;
     var height = q.height;
@@ -35,5 +44,4 @@ $(function () {
         StopMatrix();
     });
     $("button#play").click(function () { RunMatrix(); });
-
-});
+}

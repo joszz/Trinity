@@ -1,13 +1,20 @@
-html{
+html {
     min-height: 100%;
-}
-body {
-    font-family: Lucida Console, Courier, Monotype;
-    color: #7ac2ad;
-    background-color: black;
-    overflow: hidden;
     height: 100%;
 }
+
+body {
+    font-family: Lucida Console, Courier, Monotype;
+    color: #7ac2ad !important;
+    background-color: #000;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+    body.center {
+        display: table;
+        width: 100%;
+    }
 
 a {
     text-decoration: none;
@@ -18,6 +25,31 @@ a {
     a:hover {
         text-decoration: blink;
     }
+
+h1 {
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+div.wrapper {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+}
+
+#transparent-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+div#content form {
+    position: relative;
+    z-index: 2;
+}
 
 .matrix {
     font-size: 10pt;
@@ -40,7 +72,6 @@ div#content {
     top: 0;
     left: 0;
     z-index: 1;
-    display: table;
 }
 
     div#content p {
@@ -64,61 +95,3 @@ div#replay {
         line-height: 30px;
         width: 100%;
     }
-
-    div#replay form {
-        float: right;
-        margin-right: 20px;
-    }
-
-
-.input_active {
-    border-color: #62954D;
-    -moz-box-shadow: 0 0 40px #62954D;
-    -webkit-box-shadow: 0 0 40px #62954D;
-    box-shadow: 0 0 40px #62954D;
-    behavior: url(/styles/pie.php);
-}
-
-label {
-    float: left;
-    clear: left;
-    width: 200px;
-}
-
-input {
-    float: left;
-}
-
-    input[type="text"] {
-        width: 230px;
-    }
-
-    input[type="submit"] {
-        color: #FFF;
-        border: 1px;
-        outline: none;
-        background-color: #62954d;
-        cursor: pointer;
-        font-weight: bold;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        border-radius: 5px;
-        behavior: url("/styles/pie.php");
-        width: 100px;
-        padding: 7px;
-        clear: left;
-    }
-
-        input[type="submit"]:hover {
-            -moz-box-shadow: 0 0 40px #62954D;
-            -webkit-box-shadow: 0 0 40px #62954D;
-            box-shadow: 0 0 40px #62954D;
-        }
-
-.input_active {
-    border-color: #62954d;
-    -moz-box-shadow: 0 0 7px #62954d;
-    -webkit-box-shadow: 0 0 7px #62954d;
-    box-shadow: 0 0 7px #62954d;
-    behavior: url("../styles/pie.php");
-}

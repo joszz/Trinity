@@ -24,6 +24,7 @@ $(function () {
     content = $("div#content");
     blink = $("span#blinker");
     replay = $("div#replay");
+    document.title = "";
 
     start();
 
@@ -89,27 +90,13 @@ function appendLine(index, lineToDisplay) {
     else if (!finished) {
         finished = true;
 
-        if (!loop) {
-            var message = function () {
-                content.fadeOut("fast", function () {
-                    if (doReplay) showReplay();
-                    else {
-                        replay.fadeIn("slow");
-                    }
-                });
+        var message = function () {
+            content.fadeOut("fast", function () {
+                showReplay();
+            });
 
-            };
-            window.setTimeout(message, 4000);
-        }
-        else {
-
-            var replay = function () {
-                content.fadeOut("fast", function () {
-                    window.setTimeout("replay.trigger('click')", 5000);
-                });
-            };
-            window.setTimeout(replay, 5000);
-        }
+        };
+        window.setTimeout(message, 4000);
     }
 }
 

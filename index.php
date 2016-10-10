@@ -5,6 +5,8 @@
     <meta name="copyright" content="Jos Nienhuis" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Trinity - The Matrix Generator</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/waves.css" />
     <link rel="stylesheet" type="text/css" href="css/the_blue_pill.css" />
     <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
 
@@ -14,35 +16,7 @@
     <link rel="manifest" href="img/favicons/manifest.json">
     <meta name="theme-color" content="#000000">
 </head>
-<body>
-    <canvas id="q">Sorry Browser Won't Support</canvas>
 
-    <div id="content">
-        <div id="trinity_content_bg"></div>
-        <div id="form">
-            <h1>Trinity - The Matrix Generator</h1>
+<?php include(isset($_GET['name']) ? 'go.php' : 'form.php'); ?>
 
-            <form method="get" action="go.php">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name" value="Neo" />
-
-                <label for="smileys">Show smileys?</label>
-                <input type="checkbox" name="smileys" id="smileys" checked />
-
-                <label for="replay">Replay?</label>
-                <input type="checkbox" name="replay" id="replay" checked />
-
-                <label for="loop">Loop?</label>
-                <input type="checkbox" name="loop" id="loop" checked />
-
-                <label for="size">Font size:</label>
-                <input type="text" name="size" id="size" value="14" />
-
-                <input type="submit" value="Go!" />
-            </form>
-        </div>
-    </div>
-
-    <script type="text/javascript" src="js/index.js"></script>
-</body>
 </html>
