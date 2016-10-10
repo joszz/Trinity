@@ -12,13 +12,14 @@
                     <div class="col-lg-3">
                         <input type="text" name="name" id="name" value="Neo" class="form-control" />
                     </div>
+                    <div class="col-lg-4">
+                    </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="smileys" class="col-lg-5 text-right">Show smileys</label>
-                    <div class="col-lg-3">
-                        <input type="checkbox" name="smileys" id="smileys" checked />
-                    </div>
+
+                    <input type="checkbox" name="smileys" id="smileys" checked />
+                    <label for="smileys" class="btn btn-default btn-sm smileys">:)</label>
                 </div>
 
                 <div class="form-group row">
@@ -30,6 +31,14 @@
             </form>
         </div>
     </div>
+
+    <footer class="navbar navbar-inverse">
+        <div class="container text-muted">
+                <a href="#" target="_blank" class="copyright">Copyright &copy; <?php echo '2016 - ' . (date('Y') != 2016 ? date('Y') : null) ?>
+                    Jos Nienhuis
+                </a>
+        </div>
+    </footer>
 
     <script src="js/jquery.vibrate.js" type="text/javascript"></script>
     <script src="js/waves.js" type="text/javascript"></script>

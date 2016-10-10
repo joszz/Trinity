@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Trinity - The Matrix Generator</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="css/waves.css" />
     <link rel="stylesheet" type="text/css" href="css/the_blue_pill.css" />
     <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>

@@ -33,6 +33,7 @@
   <ItemGroup>
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\waves.css" />
     <Content Include="img\favicons\android-chrome-192x192.png" />
     <Content Include="img\favicons\apple-touch-icon.png" />
     <Content Include="img\favicons\browserconfig.xml" />
@@ -42,6 +43,7 @@
     <Content Include="img\favicons\manifest.json" />
     <Content Include="img\favicons\mstile-150x150.png" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.vibrate.js" />
     <Content Include="js\waves.js" />
   </ItemGroup>
 </Project>
