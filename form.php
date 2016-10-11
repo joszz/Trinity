@@ -13,13 +13,9 @@
                         <input type="text" name="name" id="name" value="Neo" class="form-control" />
                     </div>
                     <div class="col-lg-4">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-
                     <input type="checkbox" name="smileys" id="smileys" checked />
-                    <label for="smileys" class="btn btn-default btn-sm smileys">:)</label>
+                    <label for="smileys" class="smileys" title="Show smileys?">:]</label>
+                    </div>
                 </div>
 
                 <div class="form-group row">
