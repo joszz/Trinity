@@ -6,21 +6,28 @@
             <div id="transparent-overlay"></div>
 
             <form method="get" class="container">
-                <h1>Trinity - The Matrix Generator</h1>
+                <h1 class="hidden-xs">Trinity - The Matrix Generator</h1>
+                <h1 class="visible-xs">Trinity<br />
+                    The Matrix Generator</h1>
                 <div class="form-group row">
-                    <label for="name" class="col-lg-5 text-right">Name</label>
-                    <div class="col-lg-3">
+                    <label for="name" class="col-lg-5 col-xs-2 text-right">Name</label>
+                    <div class="col-lg-3 col-xs-8">
                         <input type="text" name="name" id="name" value="Neo" class="form-control" />
                     </div>
-                    <div class="col-lg-4">
-                    <input type="checkbox" name="smileys" id="smileys" checked />
-                    <label for="smileys" class="smileys" title="Show smileys?">:]</label>
+                    <div class="col-lg-4 col-xs-2">
+                        <input type="checkbox" name="smileys" id="smileys" checked />
+                        <label for="smileys" class="smileys" title="Show smileys?">:]</label>
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <div class="col-lg-8 text-right">
-                        <button type="submit" class="btn btn-success">Go!</button>
+                        <div class="btn-group">
+                            
+                            <button class="btn btn-default copy">Copy link</button>
+                            <textarea class="offcanvas"></textarea>
+                            <button type="submit" class="btn btn-success">Go!</button>
+                        </div>
                     </div>
                 </div>
                 <div class="clearfix"></div>
@@ -30,9 +37,9 @@
 
     <footer class="navbar navbar-inverse">
         <div class="container text-muted">
-                <a href="#" target="_blank" class="copyright">Copyright &copy; <?php echo '2016 - ' . (date('Y') != 2016 ? date('Y') : null) ?>
-                    Jos Nienhuis
-                </a>
+            <a href="#" target="_blank" class="copyright">Copyright &copy; <?php echo '2016 - ' . (date('Y') != 2016 ? date('Y') : null) ?>
+                Jos Nienhuis
+            </a>
         </div>
     </footer>
 

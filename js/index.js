@@ -4,6 +4,16 @@ $(function () {
     Waves.attach(".btn, button");
     Waves.init();
 
+    $(".copy").click(function () {
+        var textarea = $(this).next();
+        textarea.val("https://josnienhuis.gotgeeks.com/trinity/?name=" + $("input#name").val());
+        textarea.select();
+        document.execCommand("copy");
+
+        alert("Link copied to clipboard");
+        return false;
+    });
+
     digitalRain();
 });
 
