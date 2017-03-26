@@ -19,7 +19,6 @@
     <Compile Include="css\the_blue_pill.css" />
     <Compile Include="form.php" />
     <Compile Include="js\index.js" />
-    <Compile Include="js\jquery-3.1.1.min.js" />
     <Compile Include="js\go.js" />
     <Compile Include="index.php" />
     <Compile Include="go.php" />
@@ -43,6 +42,7 @@
     <Content Include="img\favicons\manifest.json" />
     <Content Include="img\favicons\mstile-150x150.png" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-3.2.1.min.js" />
     <Content Include="js\jquery.vibrate.js" />
     <Content Include="js\waves.js" />
   </ItemGroup>
