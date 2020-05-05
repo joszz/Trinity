@@ -42,7 +42,7 @@
     <Content Include="img\favicons\manifest.json" />
     <Content Include="img\favicons\mstile-150x150.png" />
     <Content Include="js\bootstrap.min.js" />
-    <Content Include="js\jquery-3.5.0.min.js" />
+    <Content Include="js\jquery-3.5.1.min.js" />
     <Content Include="js\jquery.vibrate.js" />
     <Content Include="js\waves.js" />
   </ItemGroup>
