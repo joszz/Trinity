@@ -13,7 +13,7 @@
     <?php endif ?>
 
     <link rel="stylesheet" type="text/css" href="css/the_blue_pill.css" />
-    <script src="js/jquery-3.5.0.min.js" type="text/javascript"></script>
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
