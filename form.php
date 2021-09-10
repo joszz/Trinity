@@ -1,5 +1,5 @@
 <body class="center">
-    <canvas id="q" width="1024" height="768">Sorry Browser Won't Support</canvas>
+    <canvas id="q">Sorry Browser Won't Support</canvas>
 
     <div class="wrapper">
         <div id="content">
@@ -35,9 +35,9 @@
         </div>
     </div>
 
-    <footer class="navbar navbar-inverse">
-        <div class="container text-muted">
-            <a href="#" target="_blank" class="copyright">Copyright &copy; <?php echo '2016 - ' . (date('Y') != 2016 ? date('Y') : null) ?>
+    <footer class="navbar">
+        <div class="container">
+            <a href="#" target="_blank" class="copyright text-muted">Copyright &copy; <?php echo date('Y') ?>
                 Jos Nienhuis
             </a>
         </div>
