@@ -8,13 +8,15 @@ body {
     color: #7ac2ad !important;
     background-color: #000;
     overflow: hidden;
-    min-height: 100%;
+    font-size: 2rem;
+    margin: 2rem;
 }
 
-body.center {
-	display: table;
-	width: 100%;
-}
+    body.center {
+        display: table;
+        width: 100%;
+        min-height: 100%;
+    }
 
 a {
     text-decoration: none;
@@ -22,9 +24,9 @@ a {
     outline: none;
 }
 
-a:hover {
-	text-decoration: blink;
-}
+    a:hover {
+        text-decoration: blink;
+    }
 
 h1 {
     text-align: center;
@@ -110,17 +112,21 @@ div#replay {
 
 input + label {
     cursor: pointer;
-    color: #7ac2ad;
+    color: #FFF;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;    
+    user-select: none;
     font-size: 20px;
     font-weight: bold;
 }
 
 input:checked + label {
-    color: #FFF;
+    color: #7ac2ad;
+}
+
+label[for="name"] {
+    line-height: 3.5rem;
 }
 
 footer.navbar {
@@ -132,8 +138,8 @@ footer.navbar {
     padding: 5px 0;
     border-radius: 0;
     z-index: 1;
-	background-image: linear-gradient(to bottom, rgba(60, 60, 60, 0.4) 0%, rgba(34, 34, 34, 0.4) 100%);
-	backdrop-filter: blur(5px);
+    background-image: linear-gradient(to bottom, rgba(60, 60, 60, 0.4) 0%, rgba(34, 34, 34, 0.4) 100%);
+    backdrop-filter: blur(5px);
 }
 
 footer .execution-time {

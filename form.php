@@ -37,7 +37,8 @@
 
     <footer class="navbar">
         <div class="container">
-            <a href="#" target="_blank" class="copyright text-muted">Copyright &copy; <?php echo date('Y') ?>
+            <a href="https://github.com/joszz/Trinity" target="_blank" class="copyright text-muted">
+                &copy; <?php echo date('Y') ?>
                 Jos Nienhuis
             </a>
         </div>
